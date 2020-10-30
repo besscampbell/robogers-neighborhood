@@ -6,14 +6,16 @@ for (i = 0; i <= inputNumber; i++) {
   inputArray.push(i);
   };
   console.log(inputArray);
- const roboNumbers= [1];
-  let roboSpeak=[]
+ const roboNumbers= [1,2,3];
+ 
 
-  inputArray.forEach(function roboger(element){ 
-   if (roboNumbers.includes(element)){
-     roboSpeak.push("Beep!")
+  const roboSpeak = inputArray.map(function roboger(element){ 
+   if ((roboNumbers[0]).includes(element)){
+     return "Beep!";
+   } else if (roboNumbers.includes(element)){
+     return "Boop!";
    } else {
-     roboSpeak.push(element);
+     return element;
    }
 console.log(roboSpeak);
   }); 
