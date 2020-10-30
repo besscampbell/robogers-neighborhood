@@ -3,7 +3,7 @@
 <head>
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
-  <link href="css/bootsrap.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <title>Mr. Roboger's Neighborhood</title>
 </head>
@@ -13,14 +13,16 @@
     <div>
       <form id="roboger">
         <div class="form-group">
-          <label for="number">Ender a number!</label>
-          <input id="number" class="form-control" type="text">
+          <label for="number">Enter a number!</label>
+          <input id="number" class="form-control" type="number">
         </div>
-        <button type="submit" class="btn-info">Talk numbers to me!</button>
+        <div>
+          <button type="submit" class="btn-info">Talk numbers to me!</button>
+        </div>  
       </form>
     </div>
     <div id="output">
-
+      <h3>Domo arigato!<span id="response"> </span></h3>
     </div>
   </div>
   
