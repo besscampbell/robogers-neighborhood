@@ -1,41 +1,32 @@
-let inputArray = [];
-let output
-let inputNumber
-console.log(inputNumber);
-for (i = 0; i <= inputNumber; i++) {
-  (function array(number){
-  inputArray.push(i);
-  }(i));
-}
-// while (number > -1) (function arrayMaker(number){
-//   inputArray.push(number);
-//   number --;
-// }); 
-
-
-const roboSpeak = inputArray.map(function roboger(element){
-  let string = element.toString();
-  if (string.includes("3")){ 
-    output = "Won't you be my neighbor?"
-  } else if(string.includes("2")){
-    output = "Boop!"
-  } else if (string.includes("1")){
-    output = "Beep!";
-  } else {
-    output = number
-  }
-  console.log(roboSpeak);
-  return output;
-  
-});
-
- $(document).ready(function(){
-  $("#roboger").submit(function(){
+$(document).ready(function(){
+  $("#roboger").submit(function(event){
+    event.preventDefault();
     let inputNumber = $("input#number").val();
-    array(inputNumber);
-    roboger(inputArray);
+    // array(inputNumber);
+    // roboger(inputNumber);
+    let output
+// let inputNumber = 12
+    let inputArray=[]
+    for (i = 0; i <= inputNumber; i++) {
+      inputArray.push(i);
+      console.log(inputArray);
+    };
+    const roboSpeak = inputArray.map(function roboger(element){
+      let string = element.toString();
+      if (string.includes("3")){ 
+        output = "Won't you be my neighbor? "
+      } else if(string.includes("2")){
+        output = "Boop! "
+      } else if (string.includes("1")){
+        output = "Beep! ";
+      } else {
+        output = (element + " ")
+      }
+      return output;
+    });
+    $("#response").text(roboSpeak);
+    $("#output").show();
+      console.log(roboSpeak);
   });
-  $("#response").text(roboSpeak);
-  console.log(roboSpeak);
- });
+});
   

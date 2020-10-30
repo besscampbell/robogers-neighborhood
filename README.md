@@ -19,10 +19,15 @@ _Is that everyone's favorite neighbor, Mr. Roger? Nope, it's his AI replacement 
 
 ## Specs
 
- _Describe roboger()_
+ _Describe arrayMaker()_
 
  _Test: "It should return an array with a 0 if the number 0 is inputted"_  
- _Expect: (roboger(0)).toEqual([0]);_  
+ _Expect: (arrayMaker(0)).toEqual([0]);_  
+
+ _Test: "It should return an array containing the number 10 and all of the number less than 10 until it stops at 0."_  
+ _Expect: (arrayMaker(0)).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);_   
+ 
+ _Describe roboger()_
 
  _Test: "It should return an array with "Beep!" if the number 1 is inputted"_  
  _Expect: (roboger(1)).toEqual(["Beep!"]);_  
