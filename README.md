@@ -21,8 +21,18 @@ _Is that everyone's favorite neighbor, Mr. Roger? Nope, it's his AI replacement 
 
  _Describe roboger()_
 
- _Test: "It should return an array with a ) if the number 0 is inputted._  
+ _Test: "It should return an array with a 0 if the number 0 is inputted"_  
  _Expect: (roboger(0)).toEqual([0]);_  
+
+ _Test: "It should return an array with "Beep!" if the number 1 is inputted"_  
+ _Expect: (roboger(1)).toEqual(["Beep!"]);_  
+
+ _Test: "It should return an array with "Boop!" of the number 2 is inputted"_  
+ _Expect: (roboger(2)).toEqual(["Boop!"]);_  
+
+ _Test: "It should return an array with "Won't you be my neighbor?" if the number 3 is inputted"_  
+ _Expect: (roboger(3)).toEqual(["Won't you be my neighbor?"]);_  
+ 
 
 
 ## Known Bugs
