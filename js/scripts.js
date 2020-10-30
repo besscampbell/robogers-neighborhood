@@ -4,22 +4,37 @@ let inputArray = [];
 
 for (i = 0; i <= inputNumber; i++) {
   inputArray.push(i);
-  };
-  console.log(inputArray);
- const roboNumbers= [1,2,3];
- 
+};
+let digits
+let splitDigits
+const roboSpeak = inputArray.map(function digitize(number){ 
+  digits= number.toString();
+  let splitDigits= digits.split();
+  return splitDigits;
+  console.log(splitDigits);
+  console.log(digits);
+  
+  let joinedDigits = splitDigits.join();
+  splitDigits.toEach(function roboger(element){
+    if (splitDigits==="1") {
+    roboSpeak.push("Beep!");
+    } else{
+    roboSpeak.push();
+    }
+  });
+  
+});
 
-  const roboSpeak = inputArray.map(function roboger(element){ 
-   if ((roboNumbers[0]).includes(element)){
-     return "Beep!";
-   } else if (roboNumbers.includes(element)){
-     return "Boop!";
-   } else {
-     return element;
-   }
-console.log(roboSpeak);
-  }); 
-   
+//   let newString= string.replace(/1{1,}/g, "Beep!");
+//   roboSpeak.push(newString);
+//   console.log(roboSpeak);
+// });
+
+
+
+
+
+
  
 
 
