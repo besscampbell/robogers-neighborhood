@@ -2,11 +2,19 @@ let inputArray = [];
 let output
 let inputNumber
 console.log(inputNumber);
-for (i = 0; i <= inputNumber; i++) function array(element){
+for (i = 0; i <= inputNumber; i++) {
+  (function array(number){
   inputArray.push(i);
-});
-const roboSpeak = inputArray.map(function roboger(number){
-  let string = number.toString();
+  }(i));
+}
+// while (number > -1) (function arrayMaker(number){
+//   inputArray.push(number);
+//   number --;
+// }); 
+
+
+const roboSpeak = inputArray.map(function roboger(element){
+  let string = element.toString();
   if (string.includes("3")){ 
     output = "Won't you be my neighbor?"
   } else if(string.includes("2")){
@@ -24,10 +32,10 @@ const roboSpeak = inputArray.map(function roboger(number){
  $(document).ready(function(){
   $("#roboger").submit(function(){
     let inputNumber = $("input#number").val();
+    array(inputNumber);
+    roboger(inputArray);
   });
   $("#response").text(roboSpeak);
   console.log(roboSpeak);
-
-  array(inputNumber);
-  roboger(inputArray);
-});
+ });
+  
