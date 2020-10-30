@@ -1,5 +1,5 @@
 // let inputNumber = $(parseInt("input#number")).val();
-let inputNumber =10
+let inputNumber =21
 let inputArray = [];
 let output= " "
 
@@ -8,11 +8,13 @@ for (i = 0; i <= inputNumber; i++) {
 };
 
 const roboSpeak = inputArray.map(function roboger(number){
-  let string= number.toString();
-  if (string.includes("1")){
-      output="Beep!";
+  let string = number.toString();
+  if (string.includes("2")){
+    output = "Boop!"
+  } else if (string.includes("1")){
+      output = "Beep!";
   } else {
-      output= number
+      output = number
   }
     
   return output;
