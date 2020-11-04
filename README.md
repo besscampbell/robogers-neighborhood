@@ -1,4 +1,4 @@
- Mr. Roboger's Neighborhood
+ ## Mr. Roboger's Neighborhood
 
 #### _Input a number and get a response from your friendly neighbor, Mr. Roboger, 10.30.2020_
 
@@ -19,32 +19,23 @@ _Is that everyone's favorite neighbor, Mr. Roger? Nope, it's his AI replacement 
 
 ## Specs
 
- _Describe arrayMaker()_
-
- _Test: "It should return an array with a 0 if the number 0 is inputted"_  
- _Expect: (arrayMaker(0)).toEqual([0]);_  
-
- _Test: "It should return an array containing the number 10 and all of the number less than 10 until it stops at 0."_  
- _Expect: (arrayMaker(0)).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);_   
- 
  _Describe roboger()_
 
+_Test: "It should return and array with [0] if the number 0 is inputted."_  
+_Expect: (arrayMaker(0)).toEqual([0]);_  
+
  _Test: "It should return an array with "Beep!" if the number 1 is inputted"_  
- _Expect: (roboger(1)).toEqual(["Beep!"]);_  
+ _Expect: (roboger(1)).toEqual([0 ,"Beep!"]);_  
 
  _Test: "It should return an array with "Boop!" of the number 2 is inputted"_  
- _Expect: (roboger(2)).toEqual(["Boop!"]);_  
+ _Expect: (roboger(2)).toEqual([0, "Beep!", "Boop!"]);_  
 
  _Test: "It should return an array with "Won't you be my neighbor?" if the number 3 is inputted"_  
- _Expect: (roboger(3)).toEqual(["Won't you be my neighbor?"]);_  
-
-
-
-
+ _Expect: (roboger(3)).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?"]);_  
 
 ## Known Bugs
 
-_No  known bugs._
+_No know bugs._
 
 ## Support and contact details
 
