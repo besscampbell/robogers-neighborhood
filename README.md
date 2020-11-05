@@ -17,12 +17,17 @@ _Is that everyone's favorite neighbor, Mr. Roger? Nope, it's his AI replacement 
 * Once it has downloaded, open the file
 * Double-click the 'index.html' file or open the file in your browser
 
-## Specs
+## Specs  
+
+  Describe arrayMaker()
+
+_Test: "It should return an array with [0] if the number 0 is inputted."_  
+_Expect: (arrayMaker(0)).toEqual([0]);_  
+
+  Test: "It should return an array including the number inputted and every number below it that is > -1."
+  Expect: (arrayMaker(8)).toEqual([0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8]); 
 
  _Describe roboger()_
-
-_Test: "It should return and array with [0] if the number 0 is inputted."_  
-_Expect: (arrayMaker(0)).toEqual([0]);_  
 
  _Test: "It should return an array with "Beep!" if the number 1 is inputted"_  
  _Expect: (roboger(1)).toEqual([0 ,"Beep!"]);_  
